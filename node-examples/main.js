@@ -2,13 +2,11 @@ const fatorial = require('./fatorial')//.fatorial --> se eu exporta com modulo.e
 
 console.log('n-fatorial')
 
-/*console.log(`Executando o script a partir do diretório %{process.cwd()}`)
-
-process.on('exit', ()=>{
-    console.log('script está prestes a terminar')
-})*/
-
-//console.log(process.argv)
-const num = process.argv[2]
+const argv = require('yargs').demandOption('num').argv
+//const num = process.argv[2]
+const num = argv.num
 
 console.log(`O fatorial de ${num} é igual a ${fatorial(num)}`)
+
+// Como teste no console
+// node main.js --num=6
