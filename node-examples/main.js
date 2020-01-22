@@ -1,3 +1,5 @@
+const fatorial = require('./fatorial')//.fatorial --> se eu exporta com modulo.exports nao preciso mas referencia fatotorial
+
 console.log('n-fatorial')
 
 /*console.log(`Executando o script a partir do diretório %{process.cwd()}`)
@@ -5,14 +7,6 @@ console.log('n-fatorial')
 process.on('exit', ()=>{
     console.log('script está prestes a terminar')
 })*/
-
-const fatorial = (num) =>{
-    if(num === 0) {
-        return 1
-    }
-
-    return num * fatorial (num - 1)
-}
 
 //console.log(process.argv)
 const num = process.argv[2]
