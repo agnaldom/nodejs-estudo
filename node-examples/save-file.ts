@@ -1,9 +1,10 @@
-const fs = require('fs')
+import * as fs from 'fs'
+import * as yargs from 'yargs'
 
 //Como executar
 //node save-file.js -f=hello2.txt -c="Hello 2"
 
-const argv =  require('yargs')
+const argv = yargs
       .alias('f', 'filename')
       .alias('c', 'content')
       .demandOption('filename')

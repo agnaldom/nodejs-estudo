@@ -1,4 +1,4 @@
-const fatorial = require('./fatorial')//.fatorial --> se eu exporta com modulo.exports nao preciso mas referencia fatotorial
+import {fatorial} from './fatorial'
 
 console.log('n-fatorial')
 
