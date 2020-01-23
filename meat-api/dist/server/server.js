@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const restify = require("restify");
+const environment_1 = require("../common/environment");
 class Server {
     iniRoutes() {
         return new Promise((resolve, reject) => {
@@ -31,7 +32,7 @@ class Server {
                         return next();
                     }
                 ]);
-                this.application.listen(3000, () => {
+                this.application.listen(environment_1.environment.server.port, () => {
                     resolve(this.application);
                 });
             }
