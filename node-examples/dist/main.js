@@ -8,3 +8,4 @@ const num = argv.num;
 console.log(`O fatorial de ${num} é igual a ${fatorial_1.fatorial(num)}`);
 // Como teste no console
 // node main.js --num=6
+//# sourceMappingURL=main.js.map
