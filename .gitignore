@@ -1,2 +1,4 @@
 node-examples/node_modules/*
 meat-api/node_modules/*
+meat-api/MongoDb/*
+
